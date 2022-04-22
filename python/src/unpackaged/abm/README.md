@@ -1,5 +1,5 @@
 # Agent Based Model
-####This program models a set of two agents with randomized points in space moves them randomly and measure the distance between tham
+#### This program models a set of two agents with randomized points in space moves them randomly and measure the distance between tham
 ---
 ## Model Algorithm:
 * Make a y variable.
