@@ -1,5 +1,5 @@
 # Agent Based Model
-#### This program models a set of two agents with randomized points in space moves them randomly and measure the distance between tham
+#### This program models a set of two agents with randomized points in space moves them randomly and measure the distance between them
 ---
 ## Model Algorithm:
 * Make a y variable.
@@ -19,7 +19,10 @@
 
 ### Instructions to Run the Model
 
-
+* Download this repository to your local machine
+* Run the model.py in any Python IDE
+* Make sure all the files of this repository are in the same directory when you run the files
+* If one needs to change the the parameters for the model they must go to the parametrs section and input integers where necesary for the number of iterations or agents
 ---
 ##### Author 
   
