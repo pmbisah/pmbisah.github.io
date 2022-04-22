@@ -12,6 +12,7 @@ import operator # this is required to calculate distance between agents later
 import  matplotlib.pyplot # this is used to plot agents on a graph
 
 import agentframework  # this imports tahe agentframwork.py class from the same directory as the model.py
+import csv  # this is used to import csv file to read an external txt file
 
 # function for distance calculation between agent to be used later in a loop
 def distance_between(agents_row_a, agents_row_b):
@@ -28,7 +29,10 @@ print(a.y, a.x)
 a.move()
 print(a.y, a.x)
 """
-
+def __init__(self):
+    self.environment = environment
+    self.store = 0 # 
+    
 # Make agents based on num_agents variable
 for i in range(num_of_agents):
     agents.append(agentframework.Agent())
@@ -49,41 +53,28 @@ for agents_row_a in agents:
         distance = distance_between(agents_row_a, agents_row_b)
 
 
-'''
-# Making agents
-
-for i in range(num_of_agents): # the range value is defned in the num of agents varable
-    agents.append([random.randint(0,100),random.randint(0,100)])# the iterations value is defned in the num of iterations varable
-# Random movement of the agents.
-for j in range(num_of_iterations):
-    for i in range(num_of_agents):
-
-        if random.random() < 0.5:
-            agents[i][0] = (agents[i][0] + 1) % 100
-        else:
-            agents[i][0] = (agents[i][0] - 1) % 100
-
-        if random.random() < 0.5:
-            agents[i][1] = (agents[i][1] + 1) % 100
-        else:
-            agents[i][1] = (agents[i][1] - 1) % 100
-
-
-
-answer = (((agents[0][0] - agents[1][0])**2) + ((agents[0][1] - agents[1][1])**2))**0.5
-print(answer)
 
 
 
 
-# Plot on graph
-matplotlib.pyplot.ylim(0, 99)
-matplotlib.pyplot.xlim(0, 99)
-for i in range(num_of_agents):
-    matplotlib.pyplot.scatter(agents[i][1],agents[i][0])
+
+
+
+
+
+
+
+f = open('in.txt', newline='')
+reader = csv.reader(f, quoting=csv.QUOTE_NONNUMERIC)
+for row in reader: # A list of rows
+    for value in row: # A list of value
+        print(value) # Floats
+f.close()
+
+environment = []
+rowlist = []
+environment.append(rowlist)
+rowlist.append(value)
+
+matplotlib.pyplot.imshow(environment)
 matplotlib.pyplot.show() 
-
-# Loop for extracting the distance for the 10 agents in relation to oneanother
-for agents_row_a in agents:
-    for agents_row_b in agents:
-        distance = distance_between(agents_row_a, agents_row_b) '''
