@@ -7,7 +7,7 @@
 * Change y and x based on random numbers.
 * Make a second set of y and xs, and make these change randomly as well.
 * Work out the distance between the two sets of y and xs.
-
+* Plot the agents in an evironment
 
 ---
 ### Items in this Repository
@@ -32,4 +32,4 @@ Date: 20 April 2022
 
 ---
 #### License 
-MIT License
+MIT License 
